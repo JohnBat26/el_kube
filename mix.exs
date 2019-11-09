@@ -20,7 +20,7 @@ defmodule ElKube.MixProject do
   def application do
     [
       mod: {ElKube.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :peerage, :observer_cli]
     ]
   end
 
@@ -42,7 +42,9 @@ defmodule ElKube.MixProject do
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      {:peerage, "~> 1.0"},
+      {:observer_cli, "~> 1.5.3"}
     ]
   end
 
