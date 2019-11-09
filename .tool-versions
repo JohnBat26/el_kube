@@ -1,0 +1,6 @@
+erlang 22.1.6
+elixir ref:v1.9.4
+nodejs 10.17.0
+minikube 1.5.2
+kubectl 1.16.2
+helm 2.16.0
